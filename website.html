@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: lightblue;
+            color: black;
+        }
+        h1 {
+            text-align: center;
+            font-weight: bold;
+        }
+        h3 {
+            text-align: center;
+        }
+        p{
+            font-size: 25px;
+        }
+        ul {
+            font-size: 20px;
+            
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .button {
+            background-color: DodgerBlue;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            -webkit-transition-duration: 0.4s ;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .button1:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+       
+        button {
+            display: block;
+        }
+        div {
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1> Wildfire's Twin Quiz </h1>
+    <h3> Test Your Knowledge! </h3>
+        <img id="wildfirestwin" src="img/wildfirestwin.jpg" height="200px">
+        
+<!-The following is the coding for the quiz questions and answers. The inputs coded create a multiple choice question.->
+        <p class="question1"><strong> 1. Who is Wildfire?</strong></p>
+        <ul class="answers">
+        <input type="radio" name="q1" value="a" id="q1a"><label for="q1a"> Mira </label><br/>
+        <input type="radio" name="q1" value="b" id="q1b"><label for="q1b"> Rina </label><br/>
+        <input type="radio" name="q1" value="c" id="q1c"><label for="q1c"> Galen </label><br/>
+        <input type="radio" name="q1" value="d" id="q1d"><label for="q1d"> Ms. Heath </label><br/>
+        </ul>
+        <div id="ans1"></div>
+        <p class="question2"><strong>2. What is the queen's real name?</strong>  </p>
+        <ul class="answers">
+        <input type="radio" name="q2" value="a" id="q2a"><label for="q2a"> Universa </label><br/>
+        <input type="radio" name="q2" value="b" id="q2b"><label for="q2b"> Eva </label><br/>
+        <input type="radio" name="q2" value="c" id="q2c"><label for="q2c"> Emily </label><br/>
+        <input type="radio" name="q2" value="d" id="q2d"><label for="q2d"> Ava </label><br/>
+        </ul>
+        <div id="ans2"></div>
+        <p class="question3"> <strong>3. What is Rina's mom's name?</strong> </p>
+        <ul class="answers">
+        <input type="radio" name="q3" value="a" id="q3a"><label for="q3a"> Ashley </label><br/>
+        <input type="radio" name="q3" value="b" id="q3b"><label for="q3b"> Fia </label><br/>
+        <input type="radio" name="q3" value="c" id="q3c"><label for="q3c"> Lilian </label><br/>
+        <input type="radio" name="q3" value="d" id="q3d"><label for="q3d"> Sirocca </label><br/>
+        </ul>
+        <div id="ans3"></div>
+        <p class="question4"> <strong>4. What is Galen's title?</strong> </p>
+        <ul class="answers">
+        <input type="radio" name="q4" value="a" id="q4a"><label for="q4a"> Eurus </label><br/>
+        <input type="radio" name="q4" value="b" id="q4b"><label for="q4b"> Boreas </label><br/>
+        <input type="radio" name="q4" value="c" id="q4c"><label for="q4c"> Notus </label><br/>
+        <input type="radio" name="q4" value="d" id="q4d"><label for="q4d"> Zephyr </label><br/>
+        </ul>
+        <div id="ans4"></div>
+        <p class="question5"> <strong>5. What is Galen's sister's name? </strong></p>
+        <ul class="answers">
+        <input type="radio" name="q5" value="a" id="q5a"><label for="q5a"> Wendy </label><br/>
+        <input type="radio" name="q5" value="b" id="q5b"><label for="q5b"> Skye </label><br/>
+        <input type="radio" name="q5" value="c" id="q5c"><label for="q5c"> Mandy</label><br/>
+        <input type="radio" name="q5" value="d" id="q5d"><label for="q5d"> He doesn't have a sister </label><br/>
+        </ul>
+        <div id="ans5"></div>
+        <p class="question6"><strong>6. What is Elece's title?</strong> </p>
+        <ul class="answers">
+        <input type="radio" name="q6" value="a" id="q6a"><label for="q6a"> Electra </label><br/>
+        <input type="radio" name="q6" value="b" id="q6b"><label for="q6b"> Metamorphose </label><br/>
+        <input type="radio" name="q6" value="c" id="q6c"><label for="q6c"> Thunder </label><br/>
+        <input type="radio" name="q6" value="d" id="q6d"><label for="q6d"> Shift </label><br/>
+        </ul>
+        <div id="ans6"></div>
+        <p class="question7"> <strong>7. What is the name of the Mainlander who helped Rina's team?</strong> </p>
+        <ul class="answers">
+        <input type="radio" name="q7" value="a" id="q7a"><label for="q7a"> Anna </label><br/>
+        <input type="radio" name="q7" value="b" id="q7b"><label for="q7b"> Mr. Carters </label><br/>
+        <input type="radio" name="q7" value="c" id="q7c"><label for="q7c"> Emily </label><br/>
+        <input type="radio" name="q7" value="d" id="q7d"><label for="q7d"> "Boss" </label><br/>
+        </ul>
+        <div id="ans7"></div>
+        <p class="question8"> <strong>8. Who is Rina's Bond? </strong></p>
+        <ul class="answers">
+        <input type="radio" name="q8" value="a" id="q8a"><label for="q8a"> Callan </label><br/>
+        <input type="radio" name="q8" value="b" id="q8b"><label for="q8b"> Kodiak </label><br/>
+        <input type="radio" name="q8" value="c" id="q8c"><label for="q8c"> Andy </label><br/>
+        <input type="radio" name="q8" value="d" id="q8d"><label for="q8d"> Galen </label><br/>
+        </ul>
+        <div id="ans8"></div>
+        <p class="question9"> <strong>9. What is Derrik's title? </strong></p>
+        <ul class="answers">
+        <input type="radio" name="q9" value="a" id="q9a"><label for="q9a"> Transform </label><br/>
+        <input type="radio" name="q9" value="b" id="q9b"><label for="q9b"> Animal </label><br/>
+        <input type="radio" name="q9" value="c" id="q9c"><label for="q9c"> Whisper </label><br/>
+        <input type="radio" name="q9" value="d" id="q9d"><label for="q9d"> Speaker </label><br/>
+        </ul>
+        <div id="ans9"></div>
+        <p class="question10"> <strong>10. Who is Zinnia? </strong> </p>
+        <ul class="answers">
+        <input type="radio" name="q10" value="a" id="q10a"><label for="q10a"> Rina's second-in-command </label><br/>
+        <input type="radio" name="q10" value="b" id="q10b"><label for="q10b"> A pixie </label><br/>
+        <input type="radio" name="q10" value="c" id="q10c"><label for="q10c"> A fairy </label><br/>
+        <input type="radio" name="q10" value="d" id="q10d"><label for="q10d"> Mira's best friend </label><br/>
+        </ul>
+        <div id="ans10"></div>
+        
+        
+        
+    <button class="button" id="scoresButton"> See Scores </button>
+
+    <div id="enter"></div>
+    
+    
+    <script type = "text/javascript" src="website.js"></script>
+</body>
+</html>
